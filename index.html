@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>DevOps Resume Builder</h1>
+  <div class="container">
+    <div class="form">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="role" placeholder="Job Title / Headline">
+      <input type="text" id="location" placeholder="Location">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="email" id="email" placeholder="Email">
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+      <h3>Technical Skills (comma-separated)</h3>
+      <input type="text" id="skills" placeholder="e.g. Docker, Kubernetes, Jenkins, AWS">
+
+      <h3>Experience</h3>
+      <textarea id="experience" placeholder="Company, Role, Duration, Bullet points..."></textarea>
+
+      <h3>Education</h3>
+      <textarea id="education" placeholder="University, Degree, Location"></textarea>
+
+      <h3>Achievements</h3>
+      <textarea id="achievements" placeholder="One per line"></textarea>
+
+      <button onclick="generatePreview()">Preview</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <div class="preview" id="preview"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
